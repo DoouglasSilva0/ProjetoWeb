@@ -1,0 +1,143 @@
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #00aaff, #00ffaa);
+    color: white;
+    padding: 20px 0;
+    height: 5%;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin-top: -20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #00aaff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.faq {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.faq-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s;
+  }
+  
+  .whatsapp img:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .faq-item h3 {
+        font-size: 1.2em;
+    }
+
+    .faq-item p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .faq-item h3 {
+        font-size: 1em;
+    }
+
+    .faq-item p {
+        font-size: 0.8em;
+    }
+
+    .whatsapp a img {
+        width: 40px;
+        height: 40px;
+    }
+}

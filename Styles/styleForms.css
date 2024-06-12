@@ -1,0 +1,104 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: url("../Images/fundo2.jpg");
+	color: white;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+input{
+	display: block;
+	height: 55px;
+	width: 400px;
+	margin: 10px;
+	border-radius: 30px;
+	border:1.2px solid white;
+	font-size: 16pt;
+	padding: 10px 20px;
+	background-color: rgba(255,255,255,0.01);
+	color: white;
+	outline: none;
+}
+
+div#corpo-form{
+	/*background-color: red;*/
+	width: 420px;
+	margin: 130px auto 0px auto;
+}
+div#corpo-form-Cad
+{
+	/*background-color: red;*/
+	width: 420px;
+	margin: 80px auto 0px auto;
+}
+div#corpo-form h1, div#corpo-form-Cad h1{
+	text-align: center;
+	padding: 20px;
+}
+
+p{
+	
+	color: white;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	-webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+input[type=submit]{
+	background-color: #FF0066;
+	border: none;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+div#msg-sucesso{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(50,205,50,.3);
+	border: 1px solid rgb(34,139,34);
+}
+
+div.msg-erro{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(250,128,114,.3);
+	border: 1px solid rgb(165,42,42);
+}

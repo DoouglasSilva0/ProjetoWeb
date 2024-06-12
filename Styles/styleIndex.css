@@ -1,0 +1,269 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ff0000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navbar-dark .navbar-brand span {
+  background: yellow;
+  color: #000;
+  padding: 5px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav-link a:hover {
+  color: white;
+}
+
+@media (max-width: 1250px) {
+  .navbar {
+    margin-left: 0%;
+  }
+
+  #navbarSupportedContent {
+    margin-left: 0%;
+  }
+
+}
+
+.navbar-brand  img  {
+  width: 124px;
+  height: 85px;
+}
+
+@media (max-width: 1250px) {
+ .navbar-brand  img  {
+    width: 124px;
+    height: 100px;
+  }
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(1.jpg);
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner-text p {
+  color: #fff;
+  letter-spacing: 2px;
+}
+.banner-btn a {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 50px;
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  transition: all .6s;
+}
+
+.banner-btn a:hover {
+  background: yellow;
+  color: #000;
+}
+
+#navbarSupportedContent {
+  margin-left: 35%;
+}
+.text-area {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.text-area span {
+  color: yellow;
+  opacity: 0;
+  transform: translate(0, -100px) rotate(360deg) scale(0);
+  animation: animate 5s forwards;
+}
+.text-area span {
+  display: inline-block;
+}
+.text-area span:nth-of-type(2) {
+  animation-delay: .1s;
+}
+.text-area span:nth-of-type(3) {
+  animation-delay: .2s;
+}
+.text-area span:nth-of-type(4) {
+  animation-delay: .3s;
+}
+.text-area span:nth-of-type(5) {
+  animation-delay: .4s;
+}
+.text-area span:nth-of-type(6) {
+  animation-delay: .5s;
+}
+.text-area span:nth-of-type(7) {
+  animation-delay: .6s;
+}
+.text-area span:nth-of-type(8) {
+  animation-delay: .7s;
+}
+@keyframes animate {
+  30% {
+      transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
+  60% {
+      transform: translate(0, 20px) scale(.8) rotate(0deg);
+  }
+  100% {
+      transform: translate(0) scale(1) rotate(0deg);
+      opacity: 1;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-dark {
+      background-color: #333;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+      background: #333;
+      text-align: center;
+  }
+  .text-area {
+      font-size: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-text p {
+      display: none;
+  }
+  .navbar-dark {
+      background-color: #333;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+      background: #333;
+      text-align: center;
+  }
+  .text-area {
+      font-size: 20px;
+  }
+}
+
+
+
+
+
+/*Slider */
+
+.container-fluid {
+  padding: 0;
+}
+
+.carousel-caption {
+  width: 600px;
+  height: 200px;
+  left: 50%;
+  top: 15vh;
+  margin-left: -300px;
+}
+
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+  height: 1000vh; 
+}
+
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.main-btn {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: .5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: transparent;
+}
+
+.carousel-indicators .active{
+  background-color: #65DAF9;
+}
+
+.cart{
+  margin-right: 10vh;
+}
+
+.person .btn {
+  display: flex;
+  align-items: center;
+}
+
+.person ion-icon {
+  margin-right: 8px;
+}
+
+.person span:hover{
+  color:  #3d5e40;
+}
+
+.person :hover{
+  color:  #3d5e40;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  }
+  
+  .whatsapp img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+  }
+  
+  .whatsapp img:hover {
+  animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+  }
+
+  
